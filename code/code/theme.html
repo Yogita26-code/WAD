@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   </head>
+
+   <body>
+      <div data-role = "page" id = "pageone" data-theme = "a">
+         <div data-role = "panel" id = "panel1">
+            <h2>This is Panel Header</h2>
+            <p>You can close this panel by pressing the Esc key or by swiping.</p>
+         </div>
+         
+         <div data-role = "header">
+            <h2>Header</h>
+         </div>
+         
+         <div data-role = "main" class = "ui-content">
+            <button class = "ui-btn">Button</button>
+            <p>Click on the button to open Panel.</p>
+            <a href = "#panel1" class = "ui-btn ui-btn-inline">Open Panel</a>
+
+            <p>List View:</p>
+            <ul data-role = "listview">
+               <li><a href = "#">India</a></li>
+               <li><a href = "#">England</a></li>
+               <li><a href = "#">Srilanka</a></li>
+            </ul><br>
+            <a href = "#popup_menu" data-rel = "popup" data-transition = "slidedown" 
+               class = "ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-a">
+               Click to see menu items</a>
+            
+            <div data-role = "popup" id = "popup_menu" data-theme = "d">
+               <ul data-role = "listview">
+                  <li data-role = "list-divider">Select your choice</li>
+                  <li><a href = "#">India</a></li>
+                  <li><a href = "#">Srilanka</a></li>
+                  <li><a href = "#">Australia</a></li>
+                  <li><a href = "#">England</a></li>
+               </ul>
+            </div>
+         </div>
+         
+         <div data-role = "footer">
+            <h2>Footer</h2>
+         </div>
+      </div>
+      
+   </body>
+</html>
